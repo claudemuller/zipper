@@ -7,6 +7,8 @@ function getFileContents(filename) {
 
 function compress(filename) {
   return new Promise((resolve, reject) => {
+    if (!filename) reject('No filename specified');
+
     const compress = zlib.createGzip(),
       fileContents = getFileContents(filename),
       outFilename = filename + '.gz',
@@ -22,6 +24,8 @@ function compress(filename) {
 
 function decompress(filename) {
   return new Promise((resolve, reject) => {
+    if (!filename) reject('No filename specified');
+
     const fileContents = getFileContents(filename),
       inflated = zlib.inflateSync(fileContents),
       outFilename = filename.slice(0, filename.indexOf('.gz'));
