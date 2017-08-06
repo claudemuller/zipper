@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zipper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/flat-ui.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3>Compress</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p>Choose the filename that you would like to compress</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <div id="filename">Choose a file</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <button class="btn btn-lg btn-primary" id="openFileButton">Browse</button>
+          <button class="btn btn-lg btn-success" id="compressButton">Compress</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/flat-ui.min.js"></script>
+    <script>require('../js/renderer.js');</script>
+
+  </body>
+</html>
