@@ -3,10 +3,29 @@ body {
   background: #553285; /*#36175e;*/
 }
 
-.btn-yellow {
-  color: #000000;
-  background-color: #ffef25;
+.nav-tabs {
+  border: 0;
 }
-.btn-yellow:hover {
-  background-color: #59580b;
+
+.nav-tabs > li {
+  width: 50%;
+  text-align: center;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:active,
+.nav-tabs > li > a:focus {
+  margin-right: 0;
+  background-color: #36175e;
+  border-radius: 0;
+  border: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:active,
+.nav-tabs > li.active > a:focus {
+  color: #ffffff;
+  background-color: #553285;
+  border: 0;
 }

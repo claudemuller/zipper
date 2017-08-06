@@ -8,37 +8,73 @@
     <link href="css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/flat-ui.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
-    <link rel="shortcut icon" href="img/favicon.ico">
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <h3>Compress</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <p>Choose the filename that you would like to compress</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <div id="filename">Choose a file</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <button class="btn btn-lg btn-primary" id="openFileButton">Browse</button>
-          <button class="btn btn-lg btn-success" id="compressButton">Compress</button>
-        </div>
-      </div>
-    </div>
-    <!-- /.container -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#compress" role="tab">Compress</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#decompress" role="tab">Decompress</a>
+      </li>
+    </ul><!-- /.nav-tabs -->
 
-    <script src="js/vendor/jquery.min.js"></script>
+    <div class="container-fluid">
+      <div class="tab-content">
+        <div class="tab-pane active" id="compress" role="tabpanel">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h3>Compress</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p>Choose the filename that you would like to compress</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div id="compressFilename"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-primary" id="fileToCompressButton">Browse</button>
+              <button class="btn btn-lg btn-success" id="compressButton">Compress</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="decompress" role="tabpanel">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h3>Decompress</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <p>Choose the filename that you would like to decompress</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <div id="decompressFilename"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <button class="btn btn-lg btn-primary" id="fileToDecompressButton">Browse</button>
+              <button class="btn btn-lg btn-success" id="decompressButton">Decompress</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <script>window.$ = window.jQuery = require('./js/vendor/jquery.min.js');</script>
     <script src="js/flat-ui.min.js"></script>
+    <script src="js/script.js"></script>
     <script>require('../js/renderer.js');</script>
 
   </body>

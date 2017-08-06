@@ -2,9 +2,9 @@ const zipper = require('./zipper'),
   remote = require('electron').remote;
 const dialog = remote.dialog;
 
-const openButton = document.getElementById('openFileButton'),
+const openButton = document.getElementById('fileToCompressButton'),
   compressButton = document.getElementById('compressButton'),
-  filenameInput = document.getElementById('filename');
+  filenameInput = document.getElementById('comporessFilename');
 let fullPath;
 
 openButton.addEventListener('click', (event) => {

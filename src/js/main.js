@@ -10,7 +10,7 @@ const app = electron.app,
 let mainWindow;
 
 function createWindow () {
-  mainWindow = new BrowserWindow({width: 800, height: 600});
+  mainWindow = new BrowserWindow({width: 650, height: 300});
 
   // and load the index.html of the app.
   mainWindow.loadURL(url.format({
@@ -20,7 +20,7 @@ function createWindow () {
   }));
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
